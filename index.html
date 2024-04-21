@@ -9,22 +9,70 @@
     <script>
         const students=['gauri','gayatri','Avinash','khushi','rupa']
         console.log("before push",students)
-        
+
         students.push("Nikita")
         console.log("After push",students)
-
-        students.pop()
+        students.unshift("pooja")
+        console.log("After unshift",students)
+       students.pop()
         console.log("After pop",students)
         console.log(students.length)
-       
 
-
+    
         const fruits=["Mango","banana","chilly","lemon","carrot"]
         console.log(fruits[1])
         console.log(fruits[4]) 
 
         const student=['gauri',1,90.2,true]
         console.log(student)
+
+        const colors=['pink','violet','Red','Green','blue']
+        console.log("before unshift",colors)
+        colors.pop()
+        console.log("After pop",colors)
+
+        colors.unshift('tomato')
+        console.log("After unshift",colors)
+        colors.shift()
+        console.log("After shift",colors)
+        
+        const wl=[]
+        console.log("before unshift",wl)
+        wl.push("Sai")
+        wl.push("Sayali")
+        wl.push("Sanvi")
+        wl.push("golu")
+        wl.push("Dhanshri")
+        wl.push("pranjal")
+        console.log("After push",wl)
+        wl.shift()
+        console.log("After shift",wl)
+
+        console.log(wl.indexOf("Sanvi"))
+        console.log(wl.splice(1,1))
+        console.log(wl.splice(2,2))
+        console.log(wl.splice(1,0,"Avi","pallavi"))
+        console.log(wl.splice(2,1,"bhakti","shreya"))
+        console.log(wl)
+        console.log(wl.reverse())
+        console.log(wl.sort())
+        console.log(wl.includes("Sanvi"))
+        console.log(wl.includes("bhakti"))
+        console.log(typeof wl)
+        console.log(Array.isArray(wl))
+
+      
+        console.log(wl.join())
+       
+
+       
+
+
+
+
+
+
+
     </script>
     
 </body>
